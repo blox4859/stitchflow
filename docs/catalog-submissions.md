@@ -19,6 +19,7 @@ Snapshot as of 2026-03-19:
 - askill: live at `https://askill.sh/skills/gh/yshishenya/stitchflow/@stitchflow` and `https://askill.sh/skills/gh/yshishenya/stitchflow/@stitch-design-local`
 - `skills.sh`: live at `https://skills.sh/yshishenya/stitchflow/stitchflow`
 - `agentskill.sh`: live at `https://agentskill.sh/@yshishenya/stitchflow` and `https://agentskill.sh/@yshishenya/stitch-design-local`
+- `SkillsMP`: not yet indexable because the public FAQ says they filter out repositories with fewer than `2` GitHub stars; repo metadata was updated to improve matching once the scraper picks it up
 - `awesome-llm-skills`: PR opened at `https://github.com/Prat011/awesome-llm-skills/pull/51`
 - `awesome-claude-skills`: PR opened at `https://github.com/ComposioHQ/awesome-claude-skills/pull/429`
 - `netresearch/claude-code-marketplace`: PR opened at `https://github.com/netresearch/claude-code-marketplace/pull/34`
