@@ -1,3 +1,7 @@
+![StitchFlow true live demo](./assets/demo/stitchflow-true-live-demo.gif)
+
+Real artifacts pulled from a live Stitch project and rendered into a workflow demo.
+
 # StitchFlow
 
 [![Node.js](https://img.shields.io/badge/node-%3E%3D22-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
