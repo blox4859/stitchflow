@@ -32,6 +32,10 @@ Why people star and keep it:
 
 Short promo demo for StitchFlow.
 
+![StitchFlow social square demo](./assets/demo/stitchflow-social-square.gif)
+
+Square social teaser for Telegram, X, and community posts.
+
 ![Generated Stitch dashboard demo](./assets/demo/stitch-dashboard-demo.png)
 
 Generated locally from a natural-language prompt with the bundled Stitch workflow.
