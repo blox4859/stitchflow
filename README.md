@@ -9,7 +9,7 @@
 [![Gemini CLI](https://img.shields.io/badge/Gemini%20CLI-extension-4285F4)](https://google-gemini.github.io/gemini-cli/docs/extensions/)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](./LICENSE)
 
-> Turn product briefs into UI directions, Tailwind-friendly HTML, and screenshots in minutes.
+> Turn plain-language product briefs into UI directions, Tailwind-friendly HTML, and screenshots in minutes.
 >
 > Prompt -> UI direction -> local HTML + screenshots.
 
@@ -31,6 +31,20 @@ Why people star and keep it:
 ![Generated Stitch dashboard demo](./assets/demo/stitch-dashboard-demo.png)
 
 Generated locally from a natural-language prompt with the bundled Stitch workflow.
+
+## What you need before install
+
+- Node.js `>=22`
+- a `STITCH_API_KEY`
+- one supported client: Codex, Claude Code, OpenClaw, GitHub Copilot, or Gemini CLI
+
+## First result in ~2 minutes
+
+1. clone the repo and run the installer
+2. add `STITCH_API_KEY` to your local `.env`
+3. restart your agent client
+4. run one of the example prompts below
+5. open the generated HTML and screenshot artifacts from the local `runs/` folder
 
 ## Try these prompts first
 
@@ -68,8 +82,12 @@ Then add `STITCH_API_KEY` to:
 ${STITCH_STARTER_ROOT:-$HOME/.agents/stitch-starter}/.env
 ```
 
-Then restart your client.
+Then restart your client and run one of the prompts from this README.
 
+Expected first output:
+- a generated UI direction
+- local HTML you can inspect or share
+- a screenshot image saved in the corresponding `runs/` folder
 
 ## Who this is for
 
