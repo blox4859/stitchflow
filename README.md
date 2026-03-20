@@ -1,7 +1,3 @@
-![StitchFlow true live demo](./assets/demo/stitchflow-true-live-demo.gif)
-
-Real artifacts pulled from a live Stitch project and rendered into a workflow demo.
-
 # StitchFlow
 
 [![Node.js](https://img.shields.io/badge/node-%3E%3D22-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
@@ -32,25 +28,13 @@ Why people star and keep it:
 - save local HTML and screenshots your team can review immediately
 - reuse one workflow across multiple coding-agent clients
 
-![StitchFlow real workflow demo](./assets/demo/stitchflow-real-demo.gif)
+![StitchFlow true live demo](./assets/demo/stitchflow-true-live-demo.gif)
 
-Main product demo: install → generate → preview → runs/ artifacts.
-
-![StitchFlow live workflow demo](./assets/demo/stitchflow-liveflow.gif)
-
-Live-style workflow demo: prompt → generate → review artifacts.
-
-![StitchFlow promo demo](./assets/demo/stitchflow-promo.gif)
-
-Short promo demo for StitchFlow.
-
-![StitchFlow social square demo](./assets/demo/stitchflow-social-square.gif)
-
-Square social teaser for Telegram, X, and community posts.
+Main demo: a live-style workflow built from real Stitch project artifacts (`screen.html`, `screen.png`, `result.json`) pulled from the Stitch API.
 
 ![Generated Stitch dashboard demo](./assets/demo/stitch-dashboard-demo.png)
 
-Generated locally from a natural-language prompt with the bundled Stitch workflow.
+Example generated output.
 
 ## What you need before install
 
