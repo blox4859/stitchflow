@@ -28,6 +28,10 @@ Why people star and keep it:
 - save local HTML and screenshots your team can review immediately
 - reuse one workflow across multiple coding-agent clients
 
+![StitchFlow promo demo](./assets/demo/stitchflow-promo.gif)
+
+Short promo demo for StitchFlow.
+
 ![Generated Stitch dashboard demo](./assets/demo/stitch-dashboard-demo.png)
 
 Generated locally from a natural-language prompt with the bundled Stitch workflow.
